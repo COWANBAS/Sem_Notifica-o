@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name           Sem Notificação
-// @description    Remove as notificações de todos os sites do navegador.
+// @name           Sem NotificaÃ§Ã£o
+// @description    Remove as notificaÃ§Ãµes de todos os sites do navegador.
 // @namespace      CowanNOT
 // @license        CowBas
 // @version        1.0
@@ -12,19 +12,19 @@
 (function() {
     'use strict';
 
-    // Lista de nomes comuns de notificações
+    // Lista de nomes comuns de notificaÃ§Ãµes
     const notificationSelectors = [
-        '.notification',       // Classe de notificação
-        '#notification',       // ID de notificação
-        '.notif',              // Abreviação às vezes usada
+        '.notification',       // Classe de notificaÃ§Ã£o
+        '#notification',       // ID de notificaÃ§Ã£o
+        '.notif',              // AbreviaÃ§Ã£o Ã s vezes usada
         '.alert',              // Alertas do Bootstrap
-        '.toast',              // Notificações tipo toast
-        '.popup',              // Notificações estilo popup
+        '.toast',              // NotificaÃ§Ãµes tipo toast
+        '.popup',              // NotificaÃ§Ãµes estilo popup
         '[role="alert"]',      // Role ARIA para alerta
         '[data-notification]'  // Atributo de dados customizado
     ];
 
-    // Remover as notificações
+    // Remover as notificaÃ§Ãµes
     function removeNotifications() {
         notificationSelectors.forEach(selector => {
             const elements = document.querySelectorAll(selector);
@@ -34,12 +34,11 @@
         });
     }
 
-    // Tirar as notificações ao recarregar a página
+    // Tirar as notificaÃ§Ãµes ao recarregar a pÃ¡gina
     window.addEventListener('load', removeNotifications);
 
-    // Observar notificações adicionadas dinamicamente
+    // Observar notificaÃ§Ãµes adicionadas dinamicamente
     const observer = new MutationObserver(removeNotifications);
     observer.observe(document.body, { childList: true, subtree: true });
 
 })();
-``` ?
