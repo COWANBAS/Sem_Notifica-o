@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/9753cb25-4f3a-4528-8d0b-221d25adb40a)
 
-- ![Bolinha Branca]  Define uma lista de seletores CSS comuns que correspondem a elementos de notificação.
+- Define uma lista de seletores CSS comuns que correspondem a elementos de notificação.
 
 *Função para Remover Notificações*
 
